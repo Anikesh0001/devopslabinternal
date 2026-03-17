@@ -19,11 +19,10 @@ pipeline {
             }
         }
         
-        stage('Run python') {
-            steps {
-                // Use the 'sh' step to execute the python script with the python interpreter
-                sh 'python modification.py'
-            }
-        }
+       stage('Run python') {
+    steps {
+        sh 'python3 modification.py'
+    }
+}
     }
 }
