@@ -19,8 +19,9 @@ pipeline {
             }
         }
         
-       stage('Run python') {
+    stage('Run python') {
     steps {
+        sh 'ls -R'
         sh 'python3 modification.py'
     }
 }
