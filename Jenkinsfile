@@ -6,7 +6,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // The 'git' step automatically checks out the repository to the workspace
-                git url: 'https://github.com/anikesh0001/simplejenkins.git',
+                git url: 'https://github.com/anikesh0001/devopslabinternal.git',
                     branch: 'main'
             }
         }
@@ -23,6 +23,7 @@ pipeline {
     steps {
         sh 'ls -R'
         sh 'python3 modification.py'
+
     }
 }
     }
